@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tablas</title>
+</head>
+
+<body>
+
+  <!-- Tablas -->
+  <!-- table = etiqueta para una tabla -->
+  <!-- tr = etiqueta para fila -->
+  <!-- td = etiqueta para una columna -->
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th colspan="3">FAMILIA</th>
+      </tr>
+      <tr>
+        <th>Nombre</th>
+        <th>Parentesco</th>
+        <th>Edad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Rocio</td>
+        <td>Madre</td>
+        <td>57</td>
+      </tr>
+      <tr>
+        <td>Jaime</td>
+        <td>Padre</td>
+        <td>65</td>
+      </tr>
+      <tr>
+        <td>Vanessa</td>
+        <td>Hermana</td>
+        <td>21</td>
+      </tr>
+      <tr>
+        <td>Nicolás</td>
+        <td>Hermano</td>
+        <td>23</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Confeccionar una tabla que muestre en la primer columna los nombres de los empleados de una compañía
+       Y en la segunda el sueldo bruto (La compañía tiene 4 empleados) -->
+  <br><br>
+  <table border="1">
+    <thead>
+      <th colspan="3">EMPLEADOS</th>
+      <tr>
+        <th>Nombre</th>
+        <th>Sueldo</th>
+        <th>Columna</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Diana Restrepo</td>
+        <td colspan="2">$1'200.000</td>
+      </tr>
+      <tr>
+        <td>Carlos Aguirre</td>
+        <td colspan="2" rowspan="2">$3'200.000</td>
+      </tr>
+      <tr>
+        <td>Juan Castro</td>
+      </tr>
+      <tr>
+        <td>Nicolás Franco</td>
+        <td colspan="2">$5'200.000</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <th>Total</th>
+      <th colspan="2">$11'400.000</th>
+    </tfoot>
+  </table>
+
+</body>
+
+</html>
