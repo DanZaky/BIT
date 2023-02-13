@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+</head>
+<body>
+  <h3>Rellena tu CV</h3>
+
+  <strong><em>Nombre</em></strong><br>
+  <input type="text" placeholder="Ingrese su nombre" maxlength="30" /> <br><br>
+
+  <strong><em>Apellidos</em></strong><br>
+  <input type="text" placeholder="Ingrese sus apellidos" maxlength="80" /> <br><br>
+
+  <strong><em>Contraseña</em></strong><br>
+  <input type="password" placeholder="Ingrese su contraseña" maxlength="10" /> <br><br>
+
+  <strong><em>DNI</em></strong><br>
+  <select>
+    <option>CC</option>
+    <option>TI</option>
+    <option>RC</option>
+  </select>
+  <input type="number" placeholder="Ingrese su DNI" min="1" max="99999999999" /> <br><br>
+
+  <strong><em>Sexo</em></strong><br>
+  <input type="radio" name="pregunta" />Hombre <br>
+  <input type="radio" name="pregunta" />Mujer <br><br>
+
+  <strong><em>Cargar Fotografía</em></strong><br>
+  <input type="file" /> <br><br>
+
+  <input type="checkbox" checked/> Suscribirse al Boletín de Novedades <br /><br />
+
+  <button type="submit">Guardar Cambios</button>
+</body>
+</html>
