@@ -1,0 +1,14 @@
+.contenedor {
+  display: flex;
+  border: 2px solid #000;
+  max-width: 800px;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.item {
+  width: 100px;
+  color: #fff;
+  background-color: darkslategray;
+  margin: 20px;
+}
