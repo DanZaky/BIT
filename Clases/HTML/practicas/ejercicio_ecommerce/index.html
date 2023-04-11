@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <title>Kwik-E-Mart</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Kwik-E-Mart</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="#"
+              id="productos"
+              >Productos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="carrito">Carrito</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="contacto">Contacto</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div
+      class="alert alert-success mt-3 text-center"
+      role="alert"
+      style="display: none"
+    >
+      El <span id="msj_producto"></span> se agregó correctamente a tu
+      <a href="#" class="alert-link">carrito</a>.
+    </div>
+
+    <!--PRODUCTOS-->
+    <section class="secciones" id="seccion_productos">
+      <h1 class="display-6 mt-3">Productos</h1>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://images.unsplash.com/photo-1604586362304-e75dda43b915?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Xbox Series S</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <p class="card-text">
+                $1.300.000
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary comprar"
+                id="producto_1"
+                data-precio="1300000"
+                data-producto="Xbox Series S"
+                >Comprar</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://www.gamerfocus.co/wp-content/uploads/2020/11/xboxperf.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Xbox Series X</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <p>
+                $3.000.000
+              </p>
+              <a 
+                href="#"
+                class="btn btn-primary comprar"
+                id="producto_2"
+                data-precio="3000000"
+                data-producto="Xbox Series X"
+                >Comprar</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://images.unsplash.com/photo-1622297845908-866f3677350e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Play Station 5</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <p>
+                $3.700.000
+              </p>
+              <a 
+                href="#"
+                class="btn btn-primary comprar"
+                id="producto_3"
+                data-precio="3700000"
+                data-producto="Play Station 5"
+                >Comprar</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://images.unsplash.com/photo-1612036781124-847f8939b154?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Nintendo Switch</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <p>
+                $1.500.000
+              </p>
+              <a 
+                href="#"
+                class="btn btn-primary comprar"
+                id="producto_4"
+                data-precio="1500000"
+                data-producto="Nintendo Switch"
+              >Comprar</a
+              >
+            </div>
+          </div>
+        </div>
+      
+      
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://images.unsplash.com/photo-1532651883115-a8245c7a8d05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Consola Retro</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <p>
+                $1.500.000
+              </p>
+              <a 
+                href="#"
+                class="btn btn-primary comprar"
+                id="producto_5"
+                data-precio="1500000"
+                data-producto="Consola Retro"
+                >Comprar</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://images.unsplash.com/photo-1601414380752-b0d4cb86a47e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Máquina Guitar Hero</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <p>
+                $3.000.000
+              </p>
+              <a 
+                href="#"
+                class="btn btn-primary comprar"
+                id="producto_6"
+                data-precio="3000000"
+                data-producto="Maquina Guitar Hero"
+                >Comprar</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://dummyimage.com/400x400/000/ffffff&text=Producto+7"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Producto 7</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a 
+                href="#"
+                class="btn btn-primary comprar"
+                id="producto_7"
+                data-precio="1000"
+                data-producto="Producto X"
+                >Comprar</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://dummyimage.com/400x400/000/ffffff&text=Producto+8"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Producto 8</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a 
+                href="#"
+                class="btn btn-primary comprar"
+                id="producto_8"
+                data-precio="1000"
+                data-producto="Producto X"
+                >Comprar</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARRITO -->
+    <section class="secciones" id="seccion_carrito" style="display: none">
+      <h1 class="display-6 mt-3">Carrito</h1>
+      <div class="row g-3 my-5">
+        <div class="col-md-8">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Producto</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Cantidad</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Producto 1</td>
+                <td>$ 150000</td>
+                <td>x 1</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Producto 3</td>
+                <td>$ 75000</td>
+                <td>x 2</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Producto 4</td>
+                <td>$ 80000</td>
+                <td>x 1</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-end pe-4">
+            <h4>Total: $ 380.000</h4>
+          </div>
+        </div>
+        <div class="col-md-4 bg-light p-4">
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="email" class="form-control" id="nombre" />
+            </div>
+            <div class="col-md-6">
+              <label for="apellido" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="apellido" />
+            </div>
+            <div class="col-md-12">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" />
+            </div>
+            <div class="col-12">
+              <label for="direccion" class="form-label">Dirección</label>
+              <input
+                type="text"
+                class="form-control"
+                id="direccion"
+                placeholder="Av. Siempre Viva 742"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="ciudad" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" id="ciudad" />
+            </div>
+            <div class="col-md-4">
+              <label for="cp" class="form-label">C.P.</label>
+              <input type="text" class="form-control" id="inputZip" />
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck"
+                />
+                <label class="form-check-label" for="gridCheck">
+                  Acepto Términos y Condiciones
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-success">Pagar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="secciones" id="seccion_contacto" style="display: none">
+      <h1 class="display-6 mt-3">Contacto</h1>
+    </section>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="script.js"></script> 
+</body>
+</html>
