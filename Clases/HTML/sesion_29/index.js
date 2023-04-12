@@ -30,14 +30,6 @@ const express = require("express");
 const app = express();
 
 //Creamos URL + Método
-app.get("/ejemplo", function(req, res){
-  //hago algo
-  console.log("El CLIENTE ingresó por GET a http://localhost:3000/ejemplo");
+app.get(ruta, function(req, res){
 
-  //respuesta del servidor
-  res.sendFile(__dirname + "/index.html");
-});
-
-app.listen(3000, function(){
-  console.log("Servidor listo y preparado en el puerto 3000");
 });
