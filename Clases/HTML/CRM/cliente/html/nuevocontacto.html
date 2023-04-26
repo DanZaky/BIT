@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous" />
+    <title>Registro de Contacto</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container mt-5 mb-3">
+        <h1 class="text-center">Registro de Contacto</h1>
+        <hr />
+        <button
+          class="btn btn-secondary me-3"
+          onclick="window.location.href='/lista-contactos'">
+          Inicio
+        </button>
+      </div>
+    </header>
+    <section class="container">
+      <div class="row m-3">
+        <form id="formBusqueda" class="d-flex justify-content-between">
+          <select class="form-select mx-3" name="nombre" id="contactoBuscado">
+            <option hidden>Búsqueda de Clientes</option>
+          </select>
+          <br />
+          <button class="btn btn-primary col-2" type="submit">Siguiente</button>
+        </form>
+      </div>
+      <hr />
+      <div class="row m-3">
+        <form id="formNuevoContacto" action="">
+          <div class="d-flex justify-content-center">
+            <label class="form-label col-3" for=""
+              >Nombre del Cliente:
+            </label>
+            <input class="form-control" type="text" name="nombre" id="nombre" />
+
+            <input type="hidden" name="nombre" id="nombre" />
+          </div>
+          <br />
+          <select class="form-select" name="estado" id="estado" required>
+            <option selected>Estado</option>
+            <option value="posible comprador">Posible comprador</option>
+            <option value="no interesado">No interesado</option>
+            <option value="venta cerrada">Venta cerrada</option></select
+          ><br />
+          <select
+            class="form-select"
+            name="tipo_de_contacto"
+            id="tipo_de_contacto"
+            required>
+            <option value="0">Tipo de contacto</option>
+            <option value="teléfono">Teléfono</option>
+            <option value="email">Email</option>
+            <option value="reunión presencial">
+              Reunión presencial
+            </option></select
+          ><br />
+          <div class="d-flex justify-content-center mb-3d">
+            <label class="form-label col-3" for=""
+              >Fecha del Contacto:
+            </label>
+            <input
+              class="form-control"
+              type="date"
+              required
+              name="fecha_de_registro"
+              id="fecha_de_registro" />
+          </div>
+          <br />
+          <div class="d-flex justify-content-end">
+            <input
+              class="btn btn-success"
+              type="submit"
+              value="Guardar Contacto" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="../script/nuevocontacto.js"></script>
+  </body>
+</html>
